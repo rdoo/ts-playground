@@ -1,2 +1,2 @@
 # ts-playground
-node typescript webpack
+Simple project starter for prototyping node apps using typescript and webpack
