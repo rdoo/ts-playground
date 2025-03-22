@@ -4,7 +4,6 @@
     "module": "es2015",
     "moduleResolution": "node",
     "lib": ["esnext", "dom"],
-    "strict": true,
-    "suppressImplicitAnyIndexErrors": true
+    "strict": true
   }
 }
