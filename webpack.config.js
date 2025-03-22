@@ -28,7 +28,7 @@ module.exports = (env, argv) => {
     entry: path.join(__dirname, 'src', 'index.ts'),
     output: {
       path: path.join(__dirname, 'build'),
-      filename: 'bundle.js',
+      filename: '[name].js',
     },
     resolve: {
       extensions: ['.ts', '.js'],
@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.ts$/,
-          loaders: [{ loader: 'ts-loader', options: { transpileOnly: true } }],
+          use: [{ loader: 'ts-loader', options: { transpileOnly: true } }],
         },
       ],
     },
